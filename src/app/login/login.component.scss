@@ -93,6 +93,69 @@
   font-size: 0.9rem;
 }
 
-.ion-text-center {
-  background: url("/src/assets/BACKDROP.png");
+:host {
+  display: block; // Make sure the component takes the full height
+  height: 100vh; // Full height of the viewport
+  background-image: url("/assets/BACKDROP.png");
+  background-size: cover; // Cover the entire background
+  background-position: center; // Center the background image
+  background-repeat: no-repeat; // Prevent the image from repeating
+  position: relative; // Position for overlay or other content
+}
+
+@media (min-width: 600px) and (max-width: 899px) {
+  /* Styles for portrait tablets */
+  .form-box {
+    width: 90%;
+    position: relative;
+    top: 35%;
+  }
+  /* Styles for landscape tablets */
+  @media (orientation: landscape) {
+    .form-box {
+      width: 100%;
+    }
+  }
+  /* Styles for small screens */
+  @media (max-width: 600px) {
+    .form-box {
+      width: 100%;
+    }
+  }
+  /* Styles for medium screens */
+  @media (min-width: 601px) and (max-width: 899px) {
+    .form-box {
+      width: 70%;
+    }
+  }
+  /* Styles for large screens */
+  @media (min-width: 900px) {
+    .form-box {
+      width: 50%;
+    }
+  }
+  /* Styles for extra large screens */
+  @media (min-width: 1200px) {
+    .form-box {
+      width: 30%;
+    }
+  }
+  /* Styles for very large screens */
+  @media (min-width: 1800px) {
+    .form-box {
+      width: 20%;
+    }
+  }
+  /* Styles for ultra large screens */
+  @media (min-width: 2560px) {
+    .form-box {
+      width: 15%;
+    }
+  }
+  /* Styles for fantastically large screens */
+  @media (min-width: 4096px) {
+    .form-box {
+      width: 10%;
+    }
+  }
 }

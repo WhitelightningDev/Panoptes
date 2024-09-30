@@ -3,6 +3,7 @@ import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router'; // Import Router for navigation
 import { FormBuilder, FormGroup, Validators } from '@angular/forms'; // Import FormBuilder for reactive forms
 import axios from 'axios'; // Import Axios
+import { environment } from 'src/environments/environment'; // Import environment variables
 
 @Component({
   selector: 'app-login',
@@ -38,7 +39,7 @@ export class LoginComponent implements OnInit {
       try {
         console.log('Sending login request to backend'); // Log before sending the request
         const response = await axios.post(
-          'http://localhost:3000/api/users/login',
+          `${environment.apiBaseUrl}/api/users/login`, // Use dynamic base URL from environment
           {
             username,
             password,
