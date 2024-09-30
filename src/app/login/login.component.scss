@@ -109,7 +109,7 @@
   /* Styles for small screens */
   @media (max-width: 600px) {
     .form-box {
-      width: 100%;
+      width: 200px;
     }
   }
   /* Styles for medium screens */
@@ -128,36 +128,6 @@
   @media (min-width: 1200px) {
     .form-box {
       width: 30%;
-    }
-  }
-  /* Styles for very large screens */
-  @media (min-width: 1800px) {
-    .form-box {
-      width: 20%;
-    }
-  }
-  /* Styles for ultra large screens */
-  @media (min-width: 2560px) {
-    .form-box {
-      width: 15%;
-    }
-  }
-  /* Styles for fantastically large screens */
-  @media (min-width: 4096px) {
-    .form-box {
-      width: 10%;
-    }
-  }
-  /* Styles for incredibly large screens */
-  @media (min-width: 8192px) {
-    .form-box {
-      width: 5%;
-    }
-  }
-  /* Styles for enormously large screens */
-  @media (min-width: 16384px) {
-    .form-box {
-      width: 2%;
     }
   }
 }
