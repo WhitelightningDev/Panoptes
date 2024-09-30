@@ -1,0 +1,30 @@
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100%; // Full height for centering
+}
+
+.login-form {
+  width: 90%; // Responsive width
+  max-width: 400px; // Limit the maximum width
+  background-color: #f8f8f8; // Light background color
+  border-radius: 8px; // Rounded corners
+  padding: 20px; // Inner padding
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); // Soft shadow for depth
+}
+
+.login-button {
+  margin-top: 20px; // Spacing above the button
+  background-color: #007aff; // Apple blue
+  color: white; // White text color
+  font-weight: bold; // Bold text
+  border-radius: 5px; // Rounded corners
+}
+
+.error-message {
+  color: red; // Error message color
+  margin-top: 10px; // Spacing above error message
+  text-align: center; // Center the error message
+}

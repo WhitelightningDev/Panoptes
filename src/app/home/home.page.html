@@ -1,20 +1,39 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>
-      Blank
+      <i class="fas fa-fingerprint"></i> Panoptes Verification
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
+<ion-content [fullscreen]="true" class="home-content">
   <ion-header collapse="condense">
     <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
+      <ion-title size="large">Verify Credentials</ion-title>
     </ion-toolbar>
   </ion-header>
 
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
+  <div class="container">
+    <strong>Choose your verification method:</strong>
+
+    <div class="card-container">
+      <ion-card class="verification-card">
+        <ion-card-header>
+          <ion-card-title>Fingerprint Verification</ion-card-title>
+        </ion-card-header>
+        <ion-card-content>
+          <p>Use your fingerprint for quick and secure access.</p>
+        </ion-card-content>
+      </ion-card>
+
+      <ion-card class="verification-card">
+        <ion-card-header>
+          <ion-card-title>Facial Recognition</ion-card-title>
+        </ion-card-header>
+        <ion-card-content>
+          <p>Use facial recognition for enhanced security.</p>
+        </ion-card-content>
+      </ion-card>
+    </div>
   </div>
 </ion-content>
