@@ -1,6 +1,38 @@
+/* Header Styling */
+.header-title {
+  display: flex;
+  align-items: center; // Align icon and text vertically
+  justify-content: center; // Center the title horizontally
+  font-size: 1.8em; // Increase font size for a bold look
+  font-family: "OrbitronLight", sans-serif;
+  font-weight: 600; // Bold text
+  margin: 20px;
+
+  i {
+    margin-right: 12px; // Adjust space between icon and text
+    color: #007aff; // Same color for the icon
+    font-size: 1.6em; // Adjust icon size
+  }
+}
+
+ion-header {
+  height: 100px;
+}
+
+ion-toolbar {
+  --background: #f8f8f8; // Light background for the toolbar
+  --border-color: transparent; // Remove border under toolbar
+}
+
+/* Home Content Styling */
 .home-content {
   --background: #f8f8f8; // Light background color
   padding: 20px; // Inner padding for the content
+}
+
+.body-title {
+  font-size: 30px;
+  padding-bottom: 20px;
 }
 
 .container {
@@ -18,10 +50,11 @@
 }
 
 .verification-card {
-  width: 40%; // Card width
-  background-color: #ffffff; // White background for the card
-  border-radius: 12px; // Rounded corners
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); // Soft shadow
+  width: 40%;
+  height: 254px;
+  border-radius: 50px;
+  background: #e0e0e0;
+  box-shadow: 0px 20px 60px #044bce6e, -20px -20px 60px #ffffff;
   transition: transform 0.2s; // Animation effect on hover
 
   &:hover {
@@ -37,15 +70,30 @@ ion-card-header {
 
 ion-card-title {
   font-weight: bold; // Bold title
+  font-size: 1.4em; // Increase title size
 }
 
 ion-card-content {
   color: #666; // Dark gray text for content
   text-align: center; // Center text
+  padding: 16px; // Add padding to the content
 }
 
-ion-title i {
-  margin-right: 8px; // Space between the icon and the text
-  color: #007aff; // Change the icon color to match your theme
-  font-size: 1.2em; // Adjust the size of the icon
+.header-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.8em;
+  font-weight: 600;
+
+  i {
+    margin-right: 10px;
+    font-size: 1.6em;
+  }
+}
+
+ion-button {
+  --background: transparent;
+  --color: #007aff; /* Optional: Apple's blue color */
+  font-size: 1.4em;
 }
