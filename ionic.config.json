@@ -1,0 +1,7 @@
+{
+  "name": "Panoptes",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
