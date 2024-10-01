@@ -1,3 +1,15 @@
 {
-  "typescript.preferences.autoImportFileExcludePatterns": ["@ionic/angular/common", "@ionic/angular/standalone"]
+  "typescript.preferences.autoImportFileExcludePatterns": [
+    "@ionic/angular/common",
+    "@ionic/angular/standalone"
+  ],
+  "cSpell.words": [
+    "devkit",
+    "fontawesome",
+    "fortawesome",
+    "haptics",
+    "ionicons",
+    "Panoptes",
+    "sourceafis"
+  ]
 }
